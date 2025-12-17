@@ -93,20 +93,12 @@
       const msg = document.getElementById("msg");
 
       // Demo credentials
-      const validUser = "admin";
-      const validPass = "1234";
 
       if (username === "" || password === "") {
-        msg.textContent = "Please fill all fields";
-        msg.className = "message error";
-      }
-      else if (username === validUser && password === validPass) {
-        msg.textContent = "Login successful!";
-        msg.className = "message success";
+        alert("please enter valid username or password");
       }
       else {
-        msg.textContent = "Invalid username or password";
-        msg.className = "message error";
+        alert("successfully login");
       }
     }
   </script>
